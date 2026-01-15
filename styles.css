@@ -3,6 +3,10 @@
     src: url(norse/Norsebold.otf);
 }
 
+:root {
+    --standard-white: #E5E7EB;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -28,10 +32,6 @@ section {
     height: 100vh;
 }
 
-.right {
-    flex: 2;
-}
-
 .overlay {
     position: absolute;
     top: 22vh;
@@ -51,7 +51,7 @@ section {
     width: 100%;
     font-family: "Norse Bold";
     font-size: 10vh;
-    color: white;
+    color: var(--standard-white);
 
     /*border: 1px solid blue;*/
 }
@@ -67,12 +67,29 @@ section {
     position: absolute;
     top: 96vh;
     width: 100%;
-    color: white;
+    color: var(--standard-white);
     font-family: sans-serif, 'Roboto', system-ui;
     gap: 0.3rem;
 }
 
 a {
-    color: white;
+    color: var(--standard-white);
     font-family: sans-serif, 'Roboto', system-ui;
+}
+
+
+.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.text-container {
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    border: 1px solid blue;
+    width: 42rem;
 }
