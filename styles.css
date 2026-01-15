@@ -1,13 +1,7 @@
-/*Stormning font*/
-/*
-body {
-   font-family: 'StormningRegular';
-   font-weight: normal;
-   font-style: normal;
-
-   font-size: 5rem;
+@font-face {
+    font-family: "Norse Bold";
+    src: url(norse/Norsebold.otf);
 }
-*/
 
 * {
     margin: 0;
@@ -29,7 +23,9 @@ section {
     position: relative;
     background-image: url(pics/bg-image-halie_west.avif);
     background-position: center;
-    height: 1000px;
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    height: 100vh;
 }
 
 .right {
@@ -43,4 +39,40 @@ section {
     width: 100%;
     background-color: black;
     opacity: 0.5;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 22vh;
+    height: 16vh;
+    width: 100%;
+    font-family: "Norse Bold";
+    font-size: 10vh;
+    color: white;
+
+    /*border: 1px solid blue;*/
+}
+
+#odin-logo {
+    height: 13vh;
+    width: auto;
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 96vh;
+    width: 100%;
+    color: white;
+    font-family: sans-serif, 'Roboto', system-ui;
+    gap: 0.3rem;
+}
+
+a {
+    color: white;
+    font-family: sans-serif, 'Roboto', system-ui;
 }
