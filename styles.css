@@ -5,6 +5,7 @@
 
 :root {
     --standard-white: #E5E7EB;
+    --container-margin: 3vw;
 }
 
 * {
@@ -18,7 +19,6 @@ body {
 }
 
 section {
-    border: 0.1rem solid black;
     display: flex;
 }
 
@@ -77,19 +77,128 @@ a {
     font-family: sans-serif, 'Roboto', system-ui;
 }
 
-
 .right {
     flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 2.5rem;
+    background-color: whitesmoke;
 }
 
 .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     color: black;
-    font-size: 1.5rem;
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 2rem;
+    /*font-family: 'Roboto', Helvetica, sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 62rem;
+    margin-left: var(--container-margin);
+    margin-bottom: 3vh;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.sign-up-div {
+    /*border: 1px solid salmon;*/
+    height: 40vh;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.815);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.sign-up-div > p {
+    margin-left: var(--container-margin);
+    font-size: 2rem;
+    font-family: Arial, 'Roboto', Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    height: 2.3rem;
+    border-radius: 5px;
+    padding-left: 12px;
+}
+
+input:focus {
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15);
+    outline: none;
     border: 1px solid blue;
-    width: 42rem;
+}
+
+.password:focus:invalid {
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15);
+    outline: none;
+    border: 1px solid blue;
+}
+
+.password:invalid {
+    border-color: palevioletred;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+form {
+    margin-left: var(--container-margin);
+    display: flex;
+    gap: 7vw;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+#create-btn {
+    border: none;
+    background-color: #596D48;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 17rem;
+    height: 3.5rem;
+    border-radius: 10px;
+    margin-left: var(--container-margin);
+    cursor: pointer;
+}
+
+
+#create-btn:focus {
+  outline: none;
+  background-color: #596d48da;
+}
+
+.has-acc {
+    font-size: 1.2rem;
+}
+
+#have-an-acc {
+    margin-left: var(--container-margin);
+}
+
+#log-in {
+    color: #596D48;
+    font-weight: bold;
 }

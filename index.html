@@ -29,13 +29,52 @@
             <p>
                 This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
-                Sign up <span>now</span> to get started.
+                Sign up <span class="italic">now</span> to get started.
             </p>
+            <p>You <span class="italic">know</span> you want to.</p>
         </div>
 
-        <div class="text-container">
-            <p>You <span>know</span> you want to.</p>
+        <div class="sign-up-div">
+            <p>Let's do this!</p>
+            <form action="sample.com" method="post" id="sign-up-form">
+                <div class="form-group">
+                    <div class="form-input">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="user-email">EMAIL</label>
+                        <input type="email" id="user-email" name="user-email" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="user-password">PASSWORD</label>
+                        <input type="password" id="user-password" name="user-password" class="password" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="phone-number" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" name="confirm-password" class="password" required>
+                    </div>
+                </div>
+            </form>
         </div>
+
+        <button type="submit" form="sign-up-form" id="create-btn">
+            Create Account
+        </button>
+
+        <p class="has-acc" id="have-an-acc">Already have an account? <span class="has-acc" id="log-in">Log in</span></p>
+
     </section>
     
 </body>
